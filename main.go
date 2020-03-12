@@ -19,9 +19,9 @@ func main() {
 				server.StartServer(os.Args[2], os.Args[3])
 			}
 		}
-		if os.Args[1] == "client" {
+		if os.Args[1] == "client" && len(os.Args) == 4 {
 			println("Start client here")
-			client.StartClient(os.Args[3])
+			client.StartClient(os.Args[2], os.Args[3])
 		}
 	}
 }
