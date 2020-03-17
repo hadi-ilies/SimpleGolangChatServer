@@ -2,7 +2,7 @@
 <p>
 </p>
 
-> 	This Program is a very simple chat Server written in go, that works following a room concept, for instance the server create/manage rooms and users connect to it. Each users can connect to a room or join one if there is an available spot. The server checks if there is an available spot in active rooms, if not, it will create a new one
+> 	This Program is a very simple chat Server written in go, that works following a room concept, for instance the server create/manage rooms and users connect to it. Each users can connect to a room or join one if there is an available spot. The server checks if there is an unoccupied spot in active rooms, if not, it will create a new one
 
 ## Usage
 
