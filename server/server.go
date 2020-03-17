@@ -65,7 +65,7 @@ func (server *Server) Start(port string) {
 				continue
 			} else {
 				rooms[index].addChatter(conn)
-				rooms[index].sendToAll("\nA new client has join the room\n")
+				rooms[index].sendToAll("\nA new client has joined the room\n")
 				clientHasFoundRoom = true
 			}
 			println("nb chatters AFTER = ", len(rooms[index].chatters))
@@ -102,7 +102,7 @@ func manageRoom(room *room) {
 			eof, timeout := room.handleReadError(err)
 			if eof {
 				room.deleteChatter(&chatter)
-				room.sendToAll("\nClient " + strconv.Itoa(i+1) + " has quit the room\n")
+				room.sendToAll("\nClient " + strconv.Itoa(i+1) + " has quitted the room\n")
 				continue
 			}
 			if timeout {
