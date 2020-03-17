@@ -4,7 +4,7 @@ import (
 	"bufio"
 )
 
-//getLine get the line wrote by the client
+//getLine: get the line wrote by the client
 func getLine(scanner *bufio.Scanner) string {
 	// Scans a line from Stdin(Console)
 	scanner.Scan()
